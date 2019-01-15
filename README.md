@@ -1,6 +1,5 @@
 # FluidTab
 一个底部导航栏的库
-该库是一个底部导航栏的库
 
 效果图：<br>
 ![在这里插入图片描述](https://raw.githubusercontent.com/qixuefeng/FluidTab/master/pic/fluidtab.gif)
