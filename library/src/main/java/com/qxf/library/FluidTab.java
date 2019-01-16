@@ -263,7 +263,9 @@ public class FluidTab extends BaseFluidTab {
 					lastItem = tempLastItem;
 					currentItem = tempCurrentItem;
 					valueAnimator.start();
-					switchFragment(currentItem);
+					if (fragmentManager != null) {
+						switchFragment(currentItem);
+					}
 				}
 
 				break;
@@ -700,7 +702,9 @@ public class FluidTab extends BaseFluidTab {
 		this.tabs = tabs;
 		this.size = tabs.length;
 		initThreshold();
-		initFragment();
+		if (fragmentManager != null) {
+			initFragment();
+		}
 		invalidate();
 	}
 
